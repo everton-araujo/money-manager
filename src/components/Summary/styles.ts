@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { transparentize } from 'polished';
 
 export const Container = styled.div`
   display: grid;
@@ -26,8 +27,13 @@ export const Container = styled.div`
       line-height: 3rem;
     }
 
-    &.highlight-background {
+    &.highlight-positive-background {
       background: var(--green);
+      color: #FFF;
+    }
+
+    &.highlight-negative-background {
+      background: #ED425C;
       color: #FFF;
     }
   }
